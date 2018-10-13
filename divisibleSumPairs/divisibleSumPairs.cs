@@ -14,7 +14,6 @@ using System;
 
 class Solution
 {
-
   // Complete the divisibleSumPairs function below.
   static int divisibleSumPairs(int n, int k, int[] ar)
   {
@@ -24,10 +23,8 @@ class Solution
     {
       for (int j = i + 1; j < len; j++)
       {
-        int num = ar[i] + ar[j];
-        if (num % k == 0)
+        if ((ar[i] + ar[j]) % k == 0)
         {
-          Console.WriteLine($"ar[{i}] + ar[{j}] = {num}");
           result++;
         }
       }
